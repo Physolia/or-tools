@@ -131,6 +131,20 @@ cc_library(
 )
 
 cc_library(
+    name = "path",
+    srcs = [
+        "path.cc",
+    ],
+    hdrs = [
+        "path.h",
+    ],
+    deps = [
+        ":base",
+        "@com_google_absl//absl/string",
+    ],
+)
+
+cc_library(
     name = "ptr_util",
     hdrs = [
         "ptr_util.h",

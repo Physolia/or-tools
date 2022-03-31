@@ -11,22 +11,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "ortools/base/version.h"
-
-#include <string>
-
-#include "absl/strings/str_cat.h"
+#include "ortools/routing/simple_graph.h"
 
 namespace operations_research {
 
-int OrToolsMajorVersion() { return OR_TOOLS_MAJOR; }
-
-int OrToolsMinorVersion() { return OR_TOOLS_MINOR; }
-
-int OrToolsPatchVersion() { return OR_TOOLS_PATCH; }
-
-std::string OrToolsVersionString() {
-  return absl::StrCat(OR_TOOLS_MAJOR, ".", OR_TOOLS_MINOR, ".", OR_TOOLS_PATCH);
-}
+Edge::Edge(const Arc& arc) : tail_(arc.tail()), head_(arc.head()) {}
+Arc::Arc(const Edge& edge) : tail_(edge.tail()), head_(edge.head()) {}
 
 }  // namespace operations_research
