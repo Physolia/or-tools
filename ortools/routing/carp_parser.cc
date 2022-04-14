@@ -17,7 +17,7 @@
 #include <string>
 
 #include "absl/strings/numbers.h"
-#include "ortools/base/container_algorithm.h"
+//#include "ortools/base/container_algorithm.h"
 #include "ortools/util/filelineiter.h"
 
 namespace operations_research {

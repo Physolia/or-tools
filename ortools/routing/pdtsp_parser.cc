@@ -18,7 +18,7 @@
 
 #include "absl/strings/numbers.h"
 #include "absl/strings/str_split.h"
-#include "file/gzipfile/gzipfile.h"
+//#include "file/gzipfile/gzipfile.h"
 #include "ortools/base/mathutil.h"
 #include "ortools/base/path.h"
 #include "ortools/base/strtoint.h"
